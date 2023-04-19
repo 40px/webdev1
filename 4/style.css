@@ -73,6 +73,15 @@ a:active {
     color: #02290b;
 }
 
+/* 11 */
+
+.toad {
+    padding: 16px;
+    margin: 32px;
+    background-color: #F8F0E3;
+    border: 1px solid #555;
+}
+
 /* 12 */
 
 .instructions li:last-child {
