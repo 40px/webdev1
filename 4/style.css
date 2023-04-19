@@ -1,0 +1,81 @@
+/* 1 */
+
+body {
+    background-color: #e1ede4;
+}
+
+/* 2 */
+
+.intro, .conclusion {
+    padding: 16px;
+    margin: 32px;
+    background-color: #F8F0E3;
+    border: 1px solid #555;
+}
+
+/* 3 */
+
+.highlight {
+    background-color: yellow;
+}
+
+/* 4 */
+
+.intro .highlight {
+    background-color: pink;
+}
+
+/* 5 */
+
+.conclusion .highlight {
+    background-color: #add8e6;
+}
+
+/* 6 */
+
+.intro .standout {
+    background-color: #f2fafa;
+}
+
+/* 7 */
+
+.conclusion .standout {
+    background-color: white;
+}
+
+/* 8 */
+
+.intro .standout strong {
+    color: red;
+}
+
+/* 9 */
+
+.conclusion .standout strong {
+    color: purple;
+}
+
+/* 10 */
+
+a:link {
+    color: #044a14;
+}
+
+a:visited {
+    color: #5d635f;
+}
+
+a:hover {
+    color: #2e8555;
+}
+
+a:active {
+    color: #02290b;
+}
+
+/* 12 */
+
+.instructions li:last-child {
+    color: red;
+    font-weight: bold;
+}

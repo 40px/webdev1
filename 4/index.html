@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Practice 4 Fun!</title>
+<meta name="description" content="Let's learn how to use CSS selectors.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<p>Don't change anything in the HTML!</p>
+
+<ol class="instructions">
+    
+    <li><p>Give the body of this page a background-color.</p></li>
+    
+    <li><p>Use a <strong>group selector</strong> to give the divs with classes named "intro" and "conclusion" padding, margin, background-color, and border.</p></li>
+    
+    <li><p>Apply some type of styling to the span elements with a class named "highlight", such as color, background-color, font-style, and/or font-weight.</p></li>
+    
+    <li><p>Inside the div that has a class named "intro", there is a span with a  class named "highlight". It contains the text "so rude". Provide some type of styling for this. It could override some styling applied in the previous step. Or it could provide some additional styling. It should only affect this particular span element.</p></li>
+    
+    <li><p>Inside the div with a class named "conclusion", there is also a span with a class named "highlight". It contains the text "best writers". Provide some styling for this. It should only affect this particular span element.</p></li>
+    
+    <li><p>Inside the div that has a class named "intro", there is a paragraph with a class named "standout". Give this a background-color. It should only affect this particular paragraph.</p></li>
+    
+    <li><p>Inside the div that has a class named "conclusion", there is a paragraph with a class named "standout". Give this a background-color. It should only affect this particular paragraph.</p></li>
+    
+    <li><p>Inside the div that has a class named "intro", there is a paragraph with a class named "standout". Within that, there is a strong element with the text "should not capitalize Web or Internet". Provide some type of styling for this. It should only affect this particular strong element.</p></li>
+    
+    <li><p>Inside the div that has a class named "conclusion", there is a paragraph with a class named "standout". Within that, there is a strong element with the text "descendant selectors". Provide some type of styling for this. It should only affect this particular strong element.</p></li>
+    
+    <li><p>Use the a:link, a:visited, a:hover, and a:active selectors to style the links on this page. Make sure you put them in the correct order.</p></li>
+    
+    <li><p>Add border, padding, margin, and background-color to the img elements.</p></li>
+    
+    <li><p>Make this list item and only this list item right here red and bold.</p></li>
+    
+</ol>
+
+<img class="toad" src="https://40px.github.io/webdev1-resources/toad.jpg" alt="A toad staring at you">
+    
+<article itemscope itemtype="http://schema.org/Article">
+
+    <header>
+        <h1>Practice 4 Fun!</h1>
+        <p>Published on <time datetime="2045-03-12" itemprop="datePublished">March 12th, 2045</time> by <span itemprop="author">Raymond Dean</span></p>
+    </header>    
+
+    <div class="content" itemprop="articleBody">     
+
+        <div class="intro">
+
+            <h2>Intro</h2>
+
+            <p>In this practice exercise, we are going to have fun with CSS selectors. Please don't roll your eyes. That would be <span class="highlight">so rude</span>, Chester. Selectors determine what you are selecting to style. It's a really good term. Some technical terms aren't that obvious about their purpose. But constructing selectors is <strong>not easy</strong>. Well, sometimes it is. Othertimes, it gets complicated. This paragraph seems too long. When writing for the web, you don't really need to adhere to traditional ideas about paragraphs. It should be contructed for clear communication. With this paragraph, I have failed.</p> 
+
+            <p class="standout">I read that the Associated Press (AP) has said that we <strong>should not capitalize Web or Internet</strong> anymore. I got in the habit of capitalizing them. I don't work in journalism and I am not sure if I should care about what the AP thinks. But I guess it's still a good resource for those who work in marketing and other kinds of communication fields. You can <a href="https://www.apstylebook.com/" target="_blank">find more information about the AP Stylebook here</a>. And that concludes the introduction.</p>
+
+        </div> <!-- end of intro div -->
+
+        <h2>CSS Selectors</h2>
+
+        <p>CSS selectors allow you to select the HTML elements that you would like to style.</p>
+
+        <h3>Group Selectors</h3>
+
+        <p>"Group selector" is a pretty obvious term too, I guess. It says that we are styling a group of things the same way. You use commas to separate each selector within the group. You shouldn't put a comma after the last one, though. If you do, the CSS validator will get angry.</p>
+
+        <p>What other types of things do we put commas in between? Maybe we would list <span class="highlight">types of sandwiches</span> and put commas in between? I don't get the Oxford comma obsession with some people. Yeah, I think we should use it. But I'm not passionate about it. But I am passionate about sandwiches. Mark Twain once said that "sandwiches are the best thing about San Francisco in the summer time". Or that could have been Wayne Gretzky. I'm not sure. But I do believe that we should use commas, appropriately.</p>
+
+        <p>I hate how instructors are always like "<a href="http://i.imgur.com/VAeA885.jpg" target="_blank">Hey fellow kids</a>, I'm doing something rad to help you grok a complex subject". I'm not a big fan of the word "grok". I guess instructors just want to be liked and get good student reviews and possibly sandwiches. I think that John Lennon wrote a song about that. I was actually going to write about <span class="highlight">group selectors</span> in this entire section. But what more is there to write about? The great writers from the 20th Century ran this topic into the ground. I get it. You want to style a group of elements the same way. Enough already.</p>
+
+        <p>Oh, but one more thing about group selectors: They involve commas. Did I mention that? You use commas to separate each element in the group. It's so that you can style a group of things in the same way. We will probably get back to discussing sandwiches again soon.</p>
+
+        <h3>Descendant Selectors</h3>
+
+        <p>This is a concept that confuses some students. Some people don't think of HTML elements as containers that other HTML elements can jump inside of. But it's kind of like <a href="https://en.wikipedia.org/wiki/Matryoshka_doll">Russian nesting dolls</a>. One stacks inside of another. A span is inside of a paragraph, that's inside of a div, that's inside of the body, that's inside of the &lt;html&gt; element. Did I use commas correctly? You could nest elements inside of elements for the rest of your days on Earth. That would not be a very good use of your life, in my opinion. But it's fun to do it for a part of your life.</p>
+
+        <ol>
+            <li>div</li>
+            <li>paragraph</li>
+            <li>span</li>
+        </ol>
+
+        <p class="standout">The div is the grandparent. The paragraph is the parent. The <span class="highlight">span is the child</span>.</p>
+
+        <p>But the paragraph is also a child. It is a child of the div. And the div is the parent of the paragraph. And the div is a child of the body. And the body is the child of the &lt;html&gt; element. I guess the &lt;html&gt; element doesn't have a parent. That's sad.</p>
+
+        <h2>Inline, Block-level, and Inline-block elements</h2>
+
+        <p>Inline elements flow side-by-side, like lines of text. Span, strong, and the &lt;a&gt; element are all inline elements.</p>
+
+        <p>Block-level elements take up the entire width across and stack on top of each other like those wooden blocks that you carved out of the ole oak tree. It's the same one that you tied the yellow ribbon around. But why did you do that? What does that song mean? Am I talking to Tony Orlando? I just read <a href="https://en.wikipedia.org/wiki/Tie_a_Yellow_Ribbon_Round_the_Ole_Oak_Tree" target="_blank">the Wikipedia page</a>. It's about sandwiches.</p>
+
+        <p>The img element is an inline-block element. The two toads line up side-by-side like inline elements. But they also have a defined height and width like block-level elements. They are hybrids like the alien-human hybrids in the X-Files. However, they do not ooze green stuff.</p>
+
+        <div class="conclusion">
+
+            <h2>Conclusion</h2>
+
+            <p>I didn't begin this section with "in conclusion". That's the sign of a bad writer. All of the <span class="highlight">best writers</span> used "in conclusion" at the end. Steinbeck perfected this. I wasn't sure how all of the dust and wrath fit in. But his words after "in conclusion" (followed by a comma) really cleared it up for me.</p>
+
+            <p class="standout">In conclusion, group selectors let you style a group of things the same way (using commas), <strong>descendant selectors</strong> let you create more specific selectors that are contructed based upon the context of the HTML, there are different kinds of HTML elements that "behave" differently, and I'm hungry.</p>
+
+        </div> <!-- end of conclusion div -->
+    
+    </div> <!-- end of content div -->
+
+</article>
+
+</body>
+</html>
