@@ -1,0 +1,51 @@
+/* This CSS file is inside the "css" folder. To get to that bg.png file from here, you first have to leave "css" with the dot-dot-slash. */
+
+body {
+    background-image: url(../images/monkey.png); 
+    background-position: right top;
+    background-repeat: repeat-y;
+    padding-right: 75px; /* I added this padding so the content doesn't overlap the background-image on the right. */
+}
+    
+ /* Or I could have used the shorthand 'background' property: 
+    
+background: url(../images/monkey.png) repeat-y right top; */
+    
+    
+/* Notice that I used hyphens in the class names in the lecture, but didn't below. It doesn't matter. YOU create class names. You should choose logical class names that describe the purpose. But they can be named whatever you would like. */
+    
+/* img floated left */
+    
+.imgleft {
+    float: left;
+    margin-right: 10px;
+}
+    
+/* img floated right */
+    
+.imgright {
+    float: right;
+    margin-left: 10px;
+}
+    
+/* img centered */
+    
+.imgcenter {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+/* For clearing the floats. I added this class to <br> elements. It might not be necessary. But if your stuff looks goofy, you might need this :) */
+    
+.clear {
+    clear: both;
+}
+
+/* center the YouTube video */
+
+iframe {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
