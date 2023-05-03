@@ -7,7 +7,7 @@ body {
     padding-right: 75px; /* I added this padding so the content doesn't overlap the background-image on the right. */
 }
     
- /* Or I could have used the shorthand 'background' property: 
+/* Or I could have used the shorthand 'background' property: 
     
 background: url(../images/monkey.png) repeat-y right top; */
     
