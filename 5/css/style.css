@@ -1,4 +1,4 @@
-/* This CSS file is inside the "css" folder. To get to that bg.png file from here, you first have to leave "css" with the dot-dot-slash. */
+/* This CSS file is inside the "css" folder. To get to that monkey.png file from here, you first have to leave "css" with the dot-dot-slash. */
 
 body {
     background-image: url(../images/monkey.png); 
@@ -12,7 +12,7 @@ body {
 background: url(../images/monkey.png) repeat-y right top; */
     
     
-/* Notice that I used hyphens in the class names in the lecture, but didn't below. It doesn't matter. YOU create class names. You should choose logical class names that describe the purpose. But they can be named whatever you would like. */
+/* Notice that I used hyphens in the class names in the lesson, but didn't below. It doesn't matter. YOU create class names. You should choose logical class names that describe the purpose. But they can be named whatever you would like. */
     
 /* img floated left */
     
