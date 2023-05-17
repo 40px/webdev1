@@ -36,7 +36,7 @@ background: url(../images/monkey.png) repeat-y right top; */
     margin-left: auto;
 }
     
-/* For clearing the floats. I added this class to <br> elements. It might not be necessary. But if your stuff looks goofy, you might need this :) */
+/* For clearing the floats. I added this class to empty <div> elements. It might not be necessary. But if your stuff looks goofy, you might need this :) */
     
 .clear {
     clear: both;
