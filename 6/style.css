@@ -19,8 +19,8 @@ body {
 	text-align: center;
 }
 
-/* by default, img is centered in banner
-   in media query, position property is used for large displays */
+/* By default, img is centered in banner.
+In media query, position property is used for large displays */
 .banner img {
 	display: block;
 	margin-right: auto;
