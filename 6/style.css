@@ -2,6 +2,8 @@
 	box-sizing: border-box;
 }
 
+/* Browsers add a default margin to the body element. This creates a space between the edge of the browser window and your page content. To remove this space, I used 'margin: 0' for the body*/
+
 body {
 	margin: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -14,13 +16,16 @@ body {
 	padding: 2em;	
 }
 
+/* Browsers add a default margin to h1 elements. It was causing an issue with my layout. So, I used 'margin: 0' here to remove that margin. */
+
 .banner h1 {
 	margin: 0;
 	text-align: center;
 }
 
-/* By default, img is centered in banner.
+/* By default, the img is centered in banner.
 In media query, position property is used for large displays */
+
 .banner img {
 	display: block;
 	margin-right: auto;
