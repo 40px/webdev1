@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.8;
+}
+
+.banner {
+	background-color: #f0f3fc;
+	border-bottom: 1px solid #d8e0f7;
+	padding: 2em;	
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+}
+
+/* by default, img is centered in banner
+   in media query, position property is used for large displays */
+.banner img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main {
+	padding: 2em;
+}
+
+.sidebar {
+	padding: 2em;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #f0f3fc;
+	border-top: 1px solid #d8e0f7;
+	text-align: center;
+}
+
+/* flexible img elements */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+
+	body {
+		font-size: 110%;
+	}
+	
+	.content-wrapper {
+	    overflow: hidden;
+		max-width: 1400px;
+		margin: 0 auto;	
+	}
+
+	main {
+		float: left;
+		width: 67%;
+		
+	}
+	
+	.sidebar {
+		float: left;
+		width: 33%;
+	}
+
+	/* position img in banner on large displays */
+
+	.banner {
+		position: relative;
+	}	
+
+	.banner img {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+	}
+	
+}/* ending curly bracket for media query */
