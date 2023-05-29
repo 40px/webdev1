@@ -32,11 +32,7 @@ In media query, position property is used for large displays */
 	margin-left: auto;
 }
 
-main {
-	padding: 2em;
-}
-
-.sidebar {
+main, .sidebar {
 	padding: 2em;
 }
 
