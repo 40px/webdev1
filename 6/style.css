@@ -23,8 +23,7 @@ body {
 	text-align: center;
 }
 
-/* By default, the img is centered in banner.
-In media query, position property is used for large displays */
+/* By default, the img is centered in banner. In the media query, the position property is used for large displays */
 
 .banner img {
 	display: block;
@@ -56,9 +55,9 @@ img {
 	}
 	
 	.content-wrapper {
-	    overflow: hidden;
-		max-width: 1400px;
-		margin: 0 auto;	
+        overflow: hidden;
+        max-width: 1400px;
+        margin: 0 auto;	
 	}
 
 	main {
