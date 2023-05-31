@@ -59,15 +59,14 @@ img {
 	}
 	
 	.content-wrapper {
-        overflow: hidden;
-        max-width: 1400px;
-        margin: 0 auto;	
+		overflow: hidden;
+		max-width: 1400px;
+		margin: 0 auto;	
 	}
 
 	main {
 		float: left;
-		width: 67%;
-		
+		width: 67%;	
 	}
 	
 	.sidebar {
