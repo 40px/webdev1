@@ -23,7 +23,7 @@ body {
 	text-align: center;
 }
 
-/* By default, the img is centered in banner. In the media query, the position property is used for large displays */
+/* By default, the img is centered in the banner. In the media query, the position property is used for large displays */
 
 .banner img {
 	display: block;
@@ -34,6 +34,8 @@ body {
 main, .sidebar {
 	padding: 2em;
 }
+
+/* There is no content inside my footer element. So that it shows up on the screen, I have given the element a min-height (minimum height) */
 
 .site-footer {
 	min-height: 6em;
@@ -47,6 +49,8 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+/* The styling within the curly brackets for the media query will only apply when the screen/window is 768 pixels or wider. */
 
 @media (min-width: 768px) {
 
