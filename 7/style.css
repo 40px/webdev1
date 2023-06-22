@@ -47,6 +47,7 @@ img {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+        align-content: center;
 	}
 	
 	/* The ul is another flexbox container */
