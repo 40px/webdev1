@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.8;
+}
+
+.banner {
+	background-color: #f0f3fc;
+	border-bottom: 1px solid #d8e0f7;
+	padding: 2em;
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+}
+
+main {
+	padding: 2em;
+}
+
+.sidebar {
+	padding: 2em;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #f0f3fc;
+	border-top: 1px solid #d8e0f7;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (min-width: 768px) {
+
+	body {
+		font-size: 110%;
+		background-color: #d8e0f7;
+	}
+
+	/* Flexbox in the Banner */
+
+	.banner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	
+	/* The ul is another flexbox container */
+
+	.navigation ul {
+		display: flex;
+		list-style-type: none;
+	}
+	
+	.navigation a {
+		margin: 0.5em;
+	}
+
+	/* CSS Grid Layout */
+	
+	.wrapper {
+		max-width: 1400px;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas: "banner banner"
+		                     "main sidebar"
+		                     "footer footer";
+	}
+	
+	.banner {
+		grid-area: banner;
+	}
+
+	main {
+		grid-area: main;
+		background-color: #fff;		
+	}
+	
+	.sidebar {
+		grid-area: sidebar;
+		background-color: #f6f6f9;
+	}
+	
+	.site-footer {
+		grid-area: footer;
+
+	}
+	
+}
