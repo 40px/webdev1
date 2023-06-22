@@ -19,11 +19,7 @@ body {
 	text-align: center;
 }
 
-main {
-	padding: 2em;
-}
-
-.sidebar {
+main, .sidebar {
 	padding: 2em;
 }
 
@@ -96,4 +92,4 @@ img {
 
 	}
 	
-}
+} /* ending curly bracket for the media query */
