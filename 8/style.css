@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #434343;
+	line-height: 1.8;
+}
+
+/* Flexbox is used in the banner. See lesson 7 for information about flexbox */
+
+.banner {
+	background-color: #f0f3fc;
+	border-bottom: 1px solid #d8e0f7;
+	padding: 2em;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* css gap property: https://developer.mozilla.org/en-US/docs/Web/CSS/gap */
+
+.banner nav ul {
+	display: flex;
+	list-style-type: none;
+	gap: 1em;
+}
+
+.banner h1 {
+	margin: 0;
+	text-shadow: 1px 1px #bbb;
+}
+
+main, .sidebar {
+	padding: 2em;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #f0f3fc;
+	border-top: 1px solid #d8e0f7;
+}
+
+/* === TABLE === */
+
+main table {
+	border: 1px solid #bbb; 
+	border-collapse: collapse;
+ }
+ 
+main caption {
+	font-weight: bold;
+	color: #555;
+}
+  
+main th {
+	background: #dbdbdb;
+	padding: 5px 4px;
+	text-shadow: 1px 1px #fff;
+	border-right: 1px solid #c8c7c7;
+	color:#333;
+}
+
+main tbody tr:nth-child(even) {
+	background: #ebebeb;
+}
+
+main tbody tr:nth-child(odd) {
+	background: #fff;
+}
+
+main td { 
+	color: #747474;
+	padding: 6px;
+	border-right: 1px solid #c8c7c7;
+	border-bottom: 1px solid #c8c7c7;
+}
+
+main tfoot td{
+	background: #dbdbdb;
+	text-shadow: 1px 1px #fff;
+	color:#555;
+	font-size: .8em;
+	font-style: italic;
+}
+
+
+/* === LIST === */
+
+main ul ul li {
+	font-style: italic;
+	color: red;
+}
+
+main ul {
+	list-style-type: square;
+}
+
+
+/* === FLEXIBLE MEDIA === */
+
+img, video {
+	  max-width: 100%;
+	  height: auto;
+}
+
+/* === DESKTOP LAYOUT === */
+
+@media (min-width: 768px) {
+
+	body {
+		font-size: 110%;
+	}
+	
+	.content-wrapper {
+		max-width: 1400px;
+		margin: 0 auto;	
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+	}
+
+ } /* ending curly bracket for the media query */
