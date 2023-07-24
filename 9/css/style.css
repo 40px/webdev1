@@ -71,7 +71,7 @@ main {
 	border-radius: 4px;
 	display: block;
 	margin: 0.4em;
-	padding:0 0.4em;
+	padding: 0 0.4em;
 	text-align: center;
 }
    
@@ -118,7 +118,7 @@ main tfoot td{
 	background: #dbdbdb;
 	text-shadow: 1px 1px #fff;
 	color:#555;
-	font-size: .8em;
+	font-size: 0.8em;
 	font-style: italic;
 }
 
