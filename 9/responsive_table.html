@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Table Example</title>
+  <meta name="description" content="An example of a responsive table.">
+  
+  <!--CLICK on 'css/responsive_table.css' below to see the CSS code-->
+  <link rel="stylesheet" href="css/responsive_table.css">
+  
+</head>
+
+
+<body>
+
+<header class="banner">
+	
+	<h1>Responsive Table</h1>
+
+	<nav class="primary-menu">
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="#">about us</a></li>
+			<li><a href="#">contact us</a></li>
+		</ul>
+	</nav>
+
+</header>
+
+<div class="content-wrapper">
+
+	<main>
+
+    <h2>Fancy responsive stuff</h2>
+    
+    <p>Make the window smaller to see how the table transforms.</p>
+
+    <p>You can right-click on this page and choose "View page source" to see the HTML code.</p>
+    
+    <p>I added data-header attributes to each td element. The CSS uses that value when displaying the table on smaller screens.</p>
+
+		<p>You can click on "<a href="css/responsive_table.css">responsive_table.css</a>" in the stylesheet link in the HTML to view the CSS code.</p>
+
+		<table>
+ 
+			<caption>KC Royals Playoff Appearances</caption>
+ 
+			<thead>
+				<tr>
+					<th>Year</th>
+					<th>Record</th>
+					<th>Result</th>
+				</tr>
+			</thead>
+    
+			<tbody>
+				<tr>
+					<td data-header="Year">1976</td>
+					<td data-header="Record">90-72</td>
+					<td data-header="Result">AL West Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1977</td>
+					<td data-header="Record">102-60</td>
+					<td data-header="Result">AL West Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1978</td>
+					<td data-header="Record">92-70</td>
+					<td data-header="Result">AL West Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1980</td>
+					<td data-header="Record">97-65</td>
+					<td data-header="Result">AL Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1981</td>
+					<td data-header="Record">50-53</td>
+					<td data-header="Result">Second half AL West winner (weird strike year thing)</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1984</td>
+					<td data-header="Record">84-78</td>
+					<td data-header="Result">AL West Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">1985</td>
+					<td data-header="Record">91-71</td>
+					<td data-header="Result">World Series Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">2014</td>
+					<td data-header="Record">89-73</td>
+					<td data-header="Result">AL Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">2015</td>
+					<td data-header="Record">95-67</td>
+					<td data-header="Result">World Series Champions</td>
+				</tr>
+				<tr>
+					<td data-header="Year">2045</td>
+					<td data-header="Record">97-65</td>
+					<td data-header="Result">World Series Champions</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Source: <a href="http://www.baseball-reference.com/teams/KCR/" target="_blank">baseball-reference.com</a></td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<p><a href="index.html">Back to practice #9 example.</a></p>
+	
+	</main>
+
+	<aside class="sidebar">
+	
+		<h2>Sidebar</h2>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit urna dolor, non dapibus justo. Sed eros mauris, suscipit ut convallis vel, auctor quis dolor. Duis justo lectus, condimentum et lacinia a, dictum vel quam. Etiam at lobortis erat. Nullam vulputate porttitor elit in lobortis. In hac habitasse platea dictumst. Ut tempus feugiat dignissim. Maecenas sed libero lorem, eu euismod augue. Suspendisse quam urna, imperdiet ut scelerisque et, vehicula sit amet purus. Nunc nisl elit, viverra a lobortis vel, pellentesque ut metus. Suspendisse potenti.</p>
+
+		<p>Aliquam sit amet eros urna, hendrerit pulvinar mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse pellentesque feugiat nunc sed sollicitudin. Vivamus sit amet nibh arcu. Proin lobortis ultricies est, vitae vestibulum ligula vulputate sed. Nullam bibendum dui eget augue iaculis luctus. Nam sit amet dolor dui. Ut nec massa sit amet metus tempor elementum a ac dui. Duis ornare ligula eget ipsum feugiat non lobortis ante bibendum. Proin at ipsum nisl, non dictum nisl.</p>
+		
+	</aside>
+
+</div> <!-- end of content-wrapper div -->
+
+<footer class="site-footer">
+
+</footer>
+
+</body>
+</html>

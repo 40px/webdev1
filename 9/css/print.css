@@ -1,0 +1,38 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+  
+/* add url after link text */
+a::after {
+    content: " (" attr(href) ")";
+}
+
+/* print relative urls as absolute urls */
+a:not([href^="http"])::after {
+    content: " (https://40px.github.io/webdev1/9/" attr(href) ")";
+}
+  
+/* print source url for media (see lesson 9 on 40px.org) */
+.media::after {
+    content: " [Media URL: " attr(data-url) "]";
+}
+  
+/* hide intra-page links, iframe embeds, nav elements, elements with 'no-print' class, img elements in sidebar, banner, footer */
+a[href^="#"], .media iframe, nav, .no-print, .sidebar img, .banner img, .site-footer img {
+    display: none;
+}
+      
+table, td, th {
+    border-collapse: collapse;
+    border: 1px solid #555;
+}
+  
+/* borders to separate sections of content */
+.banner, main, .sidebar {
+    border-bottom: 1px dotted #555;
+}
+      
+.banner, .site-footer {
+    text-align: center;
+    font-style: italic;
+}
