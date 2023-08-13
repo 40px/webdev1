@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Form</title>
+  <meta name="description" content="An example form for Web Development I course on 40px.org.">
+  
+  <!-- CLICK on style.css below to see the CSS code -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="banner">
+
+	<h1>Practice Form</h1>
+
+</header>
+
+<div class="content-wrapper">
+
+<main>
+
+<form action="https://formsubmit.co/rdean@40px.org" method="post" class="practice-form" >
+ 
+	<label for="name">Name</label>
+	<input type="text" id="name" name="name">
+	
+	<label for="email">Email</label>
+	<input type="text" id="email" name="email">
+  
+	<fieldset>
+ 
+		<legend>profession</legend>
+
+		<!-- I nested the radio and checkbox inputs inside their label elements. When you do this, "for" attributes are not needed. -->
+	 
+		<label>Librarian <input type="radio" name="profession" value="librarian"></label>
+		
+	
+		<label>Not Librarian <input type="radio" name="profession" value="not librarian"></label>
+
+	</fieldset>
+   
+	<fieldset>
+ 
+		<legend>pets</legend>
+	
+		<label>Dog <input type="checkbox" name="pets" value="dog"></label>
+		
+	
+		<label>Cat <input type="checkbox" name="pets" value="cat"></label>
+		
+	
+		<label>Toad <input type="checkbox" name="pets" value="toad"></label>
+ 
+	</fieldset>
+ 
+	<label for="newsletter">Subscribe to newsletter?</label>
+	<select name="newsletter" id="newsletter">
+		<option value="no">No</option>
+		<option value="yes">Yes</option>
+	</select>
+	
+	<label for="comments">Comments</label>
+	<textarea name="comments" id="comments"></textarea>
+ 
+	<input type="submit" value="submit form">
+
+</form>
+
+</main>
+
+<aside class="sidebar">
+
+    <p>You can right-click on this page and choose "View page source" to see the HTML code.</p>
+		
+    <p>You can click on "style.css" in the stylesheet link to view the CSS code.</p>
+
+    <p>In the CSS, I used "display: block" for the labels so they would stack above the form items instead of staying on the same line.</p>
+		
+    <p>For the radio and checkbox inputs, I nested them inside their label element. When you do that, the "for" attribute isn't necessary.</p>
+
+    <p><a href="example2.html">Here's another form example.</a></p>
+		
+</aside>
+
+</div> <!-- end of content-wrapper -->
+
+<footer class="site-footer">
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* === GLOBAL SETTINGS === */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #434343;
+	line-height: 1.8;
+}
+
+/* === DEFAULT LAYOUT STYLING === */
+
+.banner {
+	background-color: #f0f3fc;
+	border-bottom: 1px solid #d8e0f7;
+	padding: 2em;	
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+	text-shadow: 0.0625em 0.0625em #bbb;
+}
+
+main {
+	padding: 2em;
+}
+
+.sidebar {
+	padding: 2em;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #f0f3fc;
+	border-top: 1px solid #d8e0f7;
+}
+
+/* === PRACTICE FORM === */
+
+.practice-form label {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	font-weight: bold;
+}
+
+.practice-form legend {
+	padding: 1em 0 0 0;
+	font-size: 0.83em;
+	text-shadow: 0.05em 0.05em #bbb;
+}
+
+.practice-form fieldset {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.practice-form select {
+	padding: 0.5em;
+}
+
+.practice-form input[type="text"], .practice-form textarea {
+	width: 80%;
+	padding: 0.5em;
+}
+
+.practice-form textarea {
+	height: 8em;
+}
+
+.practice-form input[type="submit"] {
+	padding: 1em;
+	margin-top: 1em;
+	font-weight: bold;
+	background-color: #dbdbdb;
+	border: 1px solid #aaaaaa;
+	display: block;
+	width: 80%;
+}
+
+.practice-form input[type="submit"]:hover {
+	background-color: #e6e6e6;
+}
+
+
+/* === FLEXIBLE MEDIA === */
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* === DESKTOP LAYOUT === */
+
+@media (min-width: 768px) {
+
+  body {
+	  font-size: 110%;
+  }
+  
+  .content-wrapper {
+	  max-width: 1400px;
+	  margin: 0 auto;	
+	  display: grid;
+	  grid-template-columns: 2fr 1fr;
+  }
+
+} /* ending curly bracket for the media query */

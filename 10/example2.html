@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practice Form #2</title>
+  <meta name="description" content="Another example form for Web Development I course on 40px.org.">
+
+  <!-- CLICK on example2.css below to see the CSS code -->
+  <link rel="stylesheet" href="example2.css">
+
+</head>
+
+<body>
+
+<header class="banner">
+
+	<h1>Practice Form #2</h1>
+
+</header>
+
+<div class="content-wrapper">
+
+<main>
+
+
+<form action="https://formsubmit.co/rdean@40px.org" method="post">
+ 
+	<label for="name">Name</label>
+	<input type="text" id="name" name="Your Name">
+	
+	<label for="email">Email</label>
+	<input type="text" id="email" name="Your Email">
+  
+	<fieldset>
+ 
+		<legend>Profession</legend>
+	 
+		<label for="librarian">Librarian</label>
+		<input type="radio" name="Your Profession" id="librarian" value="librarian">
+	
+		<label for="not-librarian">Not Librarian</label>
+		<input type="radio" name="Your Profession" id="not-librarian" value="not librarian">
+
+	</fieldset>
+   
+	<fieldset>
+ 
+		<legend>Pets</legend>
+	
+		<label for="dog">Dog</label>
+		<input type="checkbox" name="Your Pets" id="dog" value="dog">
+
+		<label for="cat">Cat</label>
+		<input type="checkbox" name="Your Pets" id="cat" value="cat">
+	
+		<label for="toad">Toad</label>
+		<input type="checkbox" name="Your Pets" id="toad" value="toad">
+ 
+	</fieldset>
+ 
+	<label for="newsletter">Subscribe to newsletter?</label>
+	<select name="Subscribe to Newsletter" id="newsletter">
+		<option value="no">No</option>
+		<option value="yes">Yes</option>
+	</select>
+	
+	<label for="comments">Comments</label>
+	<textarea name="Your Comments" id="comments"></textarea>
+ 
+	<input type="submit" value="submit">
+
+</form>
+
+</main>
+
+<aside class="sidebar">
+
+	<p>In this one, I used <a href="https://40px.org/web-development-1/css-grid-flexbox/#css-grid" target="_blank">CSS Grid</a> to control the placement of the elements in the form.</p>
+		
+	<hr>
+
+	<p>You can right-click on this page and choose "View page source" to see the HTML code.</p>
+		
+	<p>You can click on "example2.css" in the stylesheet link to view the CSS code.</p>
+		
+</aside>
+
+</div> <!-- end of content-wrapper -->
+
+<footer class="site-footer">
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* === GLOBAL SETTINGS === */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #434343;
+	line-height: 1.8;
+}
+
+/* === DEFAULT LAYOUT STYLING === */
+
+.banner {
+	background-color: #f0f3fc;
+	border-bottom: 1px solid #d8e0f7;
+	padding: 2em;	
+}
+
+.banner h1 {
+	margin: 0;
+	text-align: center;
+	text-shadow: 1px 1px #bbb;
+}
+
+main {
+	padding: 2em;
+}
+
+.sidebar {
+	padding: 2em;
+}
+
+.site-footer {
+	min-height: 6em;
+	background-color: #f0f3fc;
+	border-top: 1px solid #d8e0f7;
+}
+
+/* === FORM === */
+
+form {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+	column-gap: .8em;
+	row-gap: 1.2em;
+
+}
+
+/*
+">" is used to select immediate children of the form (not children of children)
+This prevents it from applying the styling to elements inside the fieldsets
+
+SEE: https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator
+*/
+
+form > label  {
+	grid-column: 1 / 2;
+}
+
+form > input, form > select, form > textarea {
+	grid-column: 2 / 3;
+	padding: .4em;
+}
+
+form > fieldset {
+	grid-column: 1 / 3;
+}
+ 
+textarea {
+	height: 8em;
+}
+
+input[type="submit"] {
+	grid-column: 1 / 3;
+}
+
+/* === TABLE === */
+
+main table {
+	border: 1px solid #bbb; 
+	border-collapse: collapse;
+ }
+ 
+main caption {
+	font-weight: bold;
+	color: #555;
+}
+  
+main th {
+	background: #dbdbdb;
+	padding: 5px 4px;
+	text-shadow: 1px 1px #fff;
+	border-right: 1px solid #c8c7c7;
+	color:#333;
+}
+
+main tr:nth-child(even) {
+	background: #ebebeb;
+}
+
+main tr:nth-child(odd) {
+	background: #fff;
+}
+
+main td { 
+	color: #747474;
+	padding: 6px;
+	border-right: 1px solid #c8c7c7;
+	border-bottom: 1px solid #c8c7c7;
+}
+
+main tfoot td{
+	background: #dbdbdb;
+	text-shadow: 1px 1px #fff;
+	color:#555;
+	font-size: .8em;
+	font-style: italic;
+}
+
+/* === FLEXIBLE MEDIA === */
+
+img, video {
+	max-width: 100%;
+	height: auto;
+}
+
+/* === DESKTOP LAYOUT === */
+
+@media (min-width: 768px) {
+
+  body {
+	  font-size: 110%;
+  }
+  
+  .content-wrapper {
+	  max-width: 1400px;
+	  margin: 0 auto;	
+	  display: grid;
+	  grid-template-columns: 2fr 1fr;
+  }
+
+} /* ending curly bracket for the media query */
