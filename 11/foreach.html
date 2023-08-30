@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JavaScript forEach - Practice #11</title>
+  <meta name="description" content="A JavaScript example for practice exercise #11 in the Web Development I course on 40px.org">
+  
+  <!--You can click on 'style.css' below to see the CSS code-->
+  <link rel="stylesheet" media="screen" href="style.css">
+
+  <script>
+
+	window.onload = function() {
+
+		let groceries = ['pie','beer','chicken'];
+		
+		let listCode = '<ul>';
+
+		groceries.forEach(function(item) {
+			listCode += '<li>' + item + '</li>';
+		});
+
+		listCode += '</ul>';
+
+		destination = document.getElementById('destination');
+
+		destination.innerHTML = listCode;
+	}
+
+  </script>
+  
+</head>
+
+
+<body>
+
+<header class="banner">
+	<h1>Practice #11</h1>
+
+	<nav class="primary-menu">
+		<ul>
+			<li><a href="index.html">JavaScript Sandwich</a></li>
+			<li><a href="external-sandwich.html">External JS File Example</a></li>
+			<li><a href="variables.html">Variables</a></li>
+			<li><a class="active" href="foreach.html">forEach</a></li>
+			<li><a href="functions.html">Functions</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="selecting-styling.html">Selecting &amp; Styling</a></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="content-wrapper">
+
+	<main>
+
+		<h2>forEach</h2>
+
+		<p>The values in the <code>groceries</code> array are defined in the JavaScript code and then displayed within a div in the HTML:</p>
+
+		<div id="destination"></div>
+  
+	</main>
+
+	<aside class="sidebar">
+	
+		<h2>Sidebar</h2>
+
+		<p>Right-click on this page and select "View Page Source" to see the code.</p>
+
+		<p>You will notice that the "destination" div is empty:</p>
+
+		<code>&lt;div id="destination"&gt;&lt;/div&gt;</code>
+
+		<p>But if you right-click on the page, select "Inspect", and click the list on the page, you will be able to see the <code>ul</code> element that the JavaScript code has generated after the page has finished loading.</p>
+
+		<img src="images/inspect-screenshot.png" alt="screenshot showing the ul element in the HTML code when using the inspect tool in Firefox" />
+
+	</aside>
+
+</div> <!-- end of content-wrapper div -->
+
+<footer class="site-footer">
+	<p class="copyright">&copy; 2045 Risky Street Tacos, A limited liability company.</p>
+</footer>
+
+</body>
+</html>
