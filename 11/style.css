@@ -33,16 +33,12 @@ body {
 	text-shadow: 1px 1px #bbb;
 }
 
-main {
-	padding: 2em;
-}
-
 .content-wrapper {
 	background-color: white;
 	border: 1px solid #d8e0f7;
 }
 
-.sidebar, .site-footer {
+main, .sidebar, .site-footer {
 	padding: 2em;
 }
 
